@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yorkshire-terrier-world.github.io/sitemap.xml
