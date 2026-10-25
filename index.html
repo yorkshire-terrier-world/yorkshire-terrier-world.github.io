@@ -342,6 +342,60 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 .sc-topbar a,.sc-footer a{text-decoration:none}
 @media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
 </style>
+
+<!-- home-photo-20261025 -->
+<style id="home-photo-20261025">
+/* home-photo-20261025 */
+.home-editorial-photo{margin:1.25rem auto;max-width:1100px;min-width:0}
+.home-editorial-photo img{display:block;width:100%;max-width:100%;height:auto}
+.home-editorial-photo figcaption{font-size:.8rem;line-height:1.5;padding:.5rem .75rem;color:inherit}
+.sd-cover .sd-art.home-editorial-photo{display:block;margin:0;min-height:0;height:auto;opacity:1;background:none;
+border:0;box-shadow:none;transform:none;aspect-ratio:auto}
+.sd-cover .home-editorial-photo img{height:auto;min-height:0;object-fit:contain}
+.home-photo-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+align-items:center;gap:clamp(20px,4vw,60px);padding:clamp(20px,4vw,60px)}
+.home-photo-hero>.hero-inner,.home-photo-hero>.ps-in{margin:0;max-width:none;padding:0;min-width:0}
+.home-photo-hero>.home-editorial-photo{margin:0;width:100%}
+@media(max-width:760px){.home-photo-hero{grid-template-columns:minmax(0,1fr)}
+.sd-cover:has(>.home-editorial-photo){grid-template-columns:minmax(0,1fr)}}
+</style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Yorkshire Terrier Guide — Care, Facts &amp; National Day">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yorkshire-terrier-world.github.io/">
+<meta property="og:description" content="Your complete resource for Yorkshire Terrier lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta property="og:image" content="https://yorkshire-terrier-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://yorkshire-terrier-world.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Yorkshire Terrier sitting on a windowsill cushion">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yorkshire Terrier Guide — Care, Facts &amp; National Day">
+<meta name="twitter:description" content="Your complete resource for Yorkshire Terrier lovers. Breed facts, care tips, national day celebration guide and more.">
+<meta name="twitter:image" content="https://yorkshire-terrier-world.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Yorkshire Terrier sitting on a windowsill cushion">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -376,7 +430,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 </div>
 
 <!-- PAGE LAYOUT -->
-<div class="page-wrap">
+<div class="page-wrap" data-follow-parent="true">
 
   <!-- MAIN CONTENT -->
   <main class="main-content">
@@ -389,6 +443,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
       <span class="cat-tag">Health</span>
       <span class="cat-tag">Training</span>
     </div>
+<figure class="home-editorial-photo" data-home-photo="20261025"><img src="/assets/home-editorial-20261025.webp" alt="Yorkshire Terrier sitting on a windowsill cushion" width="1536" height="1024" fetchpriority="high" decoding="async" data-ai-generated="true"><figcaption>AI-generated illustration.</figcaption></figure>
 
     
         <article style="background:#f9f9f9; border-left:4px solid #1e3a8a; padding:20px; margin-bottom:24px; border-radius:4px;">
@@ -418,7 +473,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
   </main>
 
   <!-- SIDEBAR -->
-  <aside class="sidebar">
+  <aside class="sidebar" data-follow-sidebar="existing">
     
     
 
